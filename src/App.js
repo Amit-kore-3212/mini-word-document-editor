@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter,Route} from 'react-router-dom'
+// import EditorCopy from './copy'
+// import Editors from './Editor'
+import Editor2 from './Editor2'
+// import Froala from './froala'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(props){
+    return(
+        <BrowserRouter>
+        <div>
+          {/* <Route path="/" component={Editors}/> */}
+           {/* <Route path="/" component={EditorCopy}/>  */}
+        {/* <Route path="/" component={Froala}/> */}
+        <Route path="/" component={Editor2}/>
+          
+    
+        </div>
+        </BrowserRouter>
+    )
 }
-
-export default App;
+export default App
